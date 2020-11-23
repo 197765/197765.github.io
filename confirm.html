@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Confirm Redirect 404</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta title="Links Website">
+		<meta i="?/label">
+		
+		<link rel="icon" href="./media/error_type1.png">
+	</head>
+	<body>
+		<div class="container" style="margin: 10px; font-family: Calibri">
+			<h2 style="margin-block-end: 0.5rem;">Website Redirect Error</h2>
+			<h4 style="font-weight: 100; margin-block-start: 0">This website links seems to not exist!</h4>
+			<button class="fx1"><a href="./links.html">Go Back</a></button>
+		</div>
+		<img src="./media/error_type1.png">
+	</body>
+	<style>
+		body {background: rgb(30,30,30); color: white; cursor: default;}
+		.fx1 {padding: 5px; background: rgb(50,50,50); border: none; transition: background 0.2s ease-in-out}
+		.fx1:hover {background: rgb(90,90,90)}
+		.fx1 a {
+			text-decoration: none;
+			color: white;
+			padding: 5px;
+			font-size: 130%;
+			border: none;
+			
+		}
+		body img {
+			position: absolute;
+			bottom: 0.5px;
+			right: 10px;
+			max-width: 200px;
+			max-height: auto auto;
+		}
+		@media only screen and (max-width: 400px) {
+			body img {max-width: 150px;}
+			body {font-size: 95%}
+		}
+		@media only screen and (max-width: 300px) {
+			body img {max-width: 100px;}
+			body {font-size: 87.5%}
+		}
+		@media only screen and (min-width: 1440px) {
+			body img {max-width: 500px;}
+			body {font-size: 125%}
+		}
+	</style>
+</html>
