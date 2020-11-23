@@ -1,0 +1,119 @@
+* {
+box-sizing: border-box;
+} 
+html {background: white;}
+body {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+body::-webkit-scrollbar {
+	width: 0px;
+}
+header.main {
+    background: color blue;
+    min-height: 120px; max-height: 120px;
+	display: inline-flex;
+	width: 100%;
+	box-shadow: 0 0 1rem rgb(0,0,0,0.5);
+    z-index: 2;
+}
+		
+header.main img.ico {
+			width: 80px;
+			position: relative; left: 5%;
+			padding-top: 20px; padding-bottom: 20px;
+}
+header.main img.college {
+			width: 80px;
+			position: absolute; right: 20px;
+			padding-top: 20px; padding-bottom: 20px;
+}
+header.main h1.title {
+	margin-block-start: 0; margin-block-end: 0;
+    position: relative; left: 6%; top: 40px;
+	height: 40px;
+	font-family: Calibri;
+	border-left: solid;
+	padding-left: 10px;
+}
+		
+body div.main {
+    display: block;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+}
+
+.container { 
+    background: transparent;
+    font-family: Calibri;
+    margin-left: auto; margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body div.main div.link {
+    margin: 10px;  
+    max-width: 300px;
+	width: 300px ;
+    min-width: 0px;
+    background: white;
+    border: solid; border-width: 1px; border-color: rgb(220,220,220);
+}
+body div.main div.link:hover {
+    border: solid; border-width: 1px; border-color: rgb(190,190,190);
+}
+
+body div.main div.link a.toggle {
+    width: 100%;
+    min-height: 100px; max-height: 100px;
+    display: block;
+    background: rgb(240,240,240);
+    transition: background ease-in-out 0.2s;
+    overflow: hidden;
+}
+body div.main div.link a.toggle:hover {
+    background: rgb(230,230,230);
+}
+
+body div.main div.link a.toggle img.icon {
+    max-width: 100px; max-height: 100px;
+    padding: 10px;
+    display: block; margin-right: auto; margin-left:auto;
+    transition: all 0.5s;
+}
+body div.main div.link a.toggle:hover img.icon {
+    transform: scale(1.2);
+}
+
+body div.main div.link h2 {padding: 5px; margin-block-start: 0; margin-block-end: 0;}
+body div.main div.link h2 span.heading {
+    font-weight: 600;
+    font-size: 100%;
+}
+
+body div.main div.link h2 span.desc {
+    font-weight: 100;
+    font-size: 90%;
+}
+
+@media only screen and (max-width: 575px) {
+	header.main {
+		display: none;
+	}
+	body div.main div.link {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+}
+@media only screen and (max-width: 320px) {
+	body div.main div.link {
+		margin: 10px;
+		display: block;
+	}
+}
+
+        
